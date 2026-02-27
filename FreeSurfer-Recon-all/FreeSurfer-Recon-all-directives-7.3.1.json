@@ -19,7 +19,7 @@
             "optional": false,
             "description": "The subject data upon which to operate ",
             "id": "subjid_output",
-            "path-template": "[SUBJID].tgz",
+            "path-template": "[SUBJID]",
 			"value-key":"[RESULTS]"
         }
     ],
@@ -39,11 +39,12 @@
             "type": "File"
         },
         {
-            "name": "Output name",
+            "name": "Input File",
             "optional": false,
             "value-key": "[SUBJID]",
             "type": "File",
-            "id": "subjid"
+            "id": "subjid",
+            "description": "Input tarball containing recon-all output folder"
         },
         {
             "name": "Directive",
